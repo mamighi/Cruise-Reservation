@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   
+  <title>Princess Cruises</title>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <script type="text/javascript" src="JS/jquery.min.js"></script>
+  <script type="text/javascript" src="JS/image_slide.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            color: #FFFFFF;
+        }
+        .auto-style2 {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<form id="form1" runat="server">
+    <div>
+         <div id="main">
+    <div id="header">
+	  <div id="banner">
+	    <div id="welcome">
+            <a href="AdminHome.aspx">	      <h1 >Welcome To Princess Cruises</h1></a>
+	    </div><!--close welcome-->
+	    <div id="menubar">
+          <ul id="menu">
+            
+            <li><a href="AddNewCruise.aspx">New Cruise</a></li>
+            <li><a href="NewTrip.aspx">New Trip</a></li>
+            <li><a href="Cruies.aspx">Cruies</a></li>
+            <li><a href="Trip.aspx">Trips</a></li>
+            <li><a href="Report.aspx">Report</a></li>
+            <li><a href="Logout.aspx">Log Out</a></li>
+          </ul>
+        </div><!--close menubar-->	  
+	  </div><!--close banner-->	
+
+    </div><!--close header-->	
+  </div><!--close main-->
+  
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+          <div id="footer_container">
+    <div id="footer">
+	  
+    </div><!--close footer-->  
+  </div><!--close footer_container-->  
+    </div>
+    </form>
+</body>
+</html>
